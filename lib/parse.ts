@@ -8,7 +8,7 @@ export const mdToHtml = (md: string): string => {
   return converter.makeHtml(md)
 }
 
-const parse = async (_path: string): Promise<matter.GrayMatterFile<string>["data"]> => {
+const parse = (_path: string): matter.GrayMatterFile<string>["data"] => {
   const filePath = `${_path}.md`
   const fullPath = path.join(process.cwd(), 'data', filePath)
   const file = fs.readFileSync(fullPath, 'utf8')
