@@ -1,13 +1,13 @@
-import parse from "./parse"
-import getDataFile from "./getDataFile"
-import getTemplatePart from "./getTemplatePart"
+import getData from "./getData"
+import { getHeader, getFooter } from "./getTemplatePart"
 
 const getPageData = (slug: string) => {
-  const file = getDataFile(`pages/${slug}`)
-  const pageData = parse(file)
-  const footer = getTemplatePart("footer")
+  const pageData = getData(`pages/${slug}`)
+  const header = getHeader()
+  const footer = getFooter()
   return {
     ...pageData,
+    header,
     footer
   }
 }

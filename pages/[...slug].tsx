@@ -1,6 +1,6 @@
 import { GetStaticPaths, GetStaticProps } from "next"
 import getPaths from "../lib/getPaths"
-import Page from "../modules/Page"
+import Page from "../components/Page"
 import getPageData from "../lib/getPageData"
 import { PageComponent } from "../types"
 
