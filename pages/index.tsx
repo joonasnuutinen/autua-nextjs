@@ -1,5 +1,6 @@
 import type { GetStaticProps } from 'next'
 import Head from 'next/head'
+import getPageData from '../lib/getPageData'
 import parse from '../lib/parse'
 import Page from '../modules/Page'
 import { PageComponent } from '../types'
@@ -9,7 +10,7 @@ const Home: PageComponent = (props) => {
 }
 
 export const getStaticProps: GetStaticProps = async () => {
-  const pageData = await parse("pages/index")
+  const pageData = getPageData("index")
   return {
     props: pageData
   }

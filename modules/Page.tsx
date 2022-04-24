@@ -1,13 +1,17 @@
 import Head from "next/head"
+import Footer from "./Footer"
 import { PageComponent } from "../types"
 
-const Page: PageComponent = ({ title, content }) => {
+const Page: PageComponent = ({ title, content, footer }) => {
   return (
     <div>
       <Head>
         <title>{title}</title>
       </Head>
-      <div dangerouslySetInnerHTML={{ __html: content }} />
+      <main>
+        <div dangerouslySetInnerHTML={{ __html: content }} />
+      </main>
+      {Footer(footer)}
     </div>
   )
 }
