@@ -22,6 +22,8 @@ Nopeasti latautuvat sivut ovat ekologisia ja pitävät kävijäsi tyytyväisinä
 
 Suosimme [Jamstack](https://jamstack.org/)-teknologiaa, joka mahdollistaa erinomaisen suorituskyvyn. Kiinnitämme erityistä huomiota sivujen jalanjälkeen eli siihen, että 1) käyttäjälle ei ladata mitään turhaa, ja 2) ladattavat sivut on optimoitu huippuunsa.
 
+Teemme ja ylläpidämme myös perinteisiä WordPress-sivustoja, joissa hyödynnämme vastaavia optimointeja.
+
 Mittari: [Google Lighthouse](https://developers.google.com/web/tools/lighthouse) -suorituskykypisteytys vähintään 90/100 sekä mobiililaitteilla että tietokoneella.
 
 ### Turvallinen
@@ -31,6 +33,8 @@ Jamstack-teknologia mahdollistaa korkeamman tietoturvan kuin perinteiset webhote
 Perinteisissä toteutuksissa palvelimen sovelluslogiikka käsittelee HTTP-pyynnöt, välittää pyyntöjen mukana lähetettyä dataa tietokantaan ja muodostaa vastauksen. Jokaiseen vaiheeseen sisältyy tietoturvariskejä, ja mitä enemmän liikkuvia osia kokonaisuuteen sisältyy, sitä suuremmalla riskillä johonkin osaan jää tietoturva-aukko. Lisäksi pyynnöt kuluttavat enemmän palvelinresursseja, mikä altistaa helpommin mahdollisille palvelunestohyökkäyksille.
 
 Jamstack sen sijaan erottaa sivujen esittämislogiikan taustapalveluista. Sivut tallennetaan staattisina tiedostoina, mikä vähentää palvelinajon ja tietokantakutsujen määrän murto-osaan. Samalla tietoturva-aukkojen riski pienenee. Lisäksi kevyt resurssiriippuvuus vaikeuttaa palvelunestohyökkäyksien onnistumista.
+
+WordPress-toteutuksissa valitsemme käytettävät lisäosat ja teemat huolella, huolehdimme niiden päivityksistä, säädämme HTTPS-asetukset kohdilleen sekä määritämme kaksivaiheisen tunnistautumisen. WordPress itsessään on hyvin turvallinen sisällönhallintajärjestelmä, mutta erityisesti runsas ja huolimaton lisäosien käyttö altistaa riskeille. Tämän takia pyrimme minimoimaan lisäosien tarpeen ja valitsemaan mahdollisimman luotettavia lisäosia.
 
 ### Saavutettava
 
